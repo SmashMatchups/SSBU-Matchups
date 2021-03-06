@@ -1,6 +1,6 @@
 # SSBU-Matchups
 
-A collection of community-sourced advice for every Matchup in Super Smash Bros Ultimate, used as the source for [SmashMatchsups.com](http://www.smashmatchups.com).
+A collection of community-sourced advice for every Matchup in Super Smash Bros Ultimate, used as the source for [SmashMatchups.com](http://www.smashmatchups.com).
 
 ## How to contribute
 
@@ -27,15 +27,19 @@ In order to keep pages somewhat consistent, pages must adhere to this common sty
 
 Matchup file names have to be specific (otherwise SmashMatchups.com won't find them). We can't have one matchup have "R.O.B.md" as the file, and another "rob.md".
 
-To fix this, names are normalized into lowercase, periods are removed, "&" becomes "and", and spaces become underscores. For example "Mr. Game & Watch" becomes "mr_game_and_watch". When in doubt, simply refer to the top level directories, which are already named appropriately. Additionally:
+To fix this, names are normalized into lowercase, periods are removed, "&" becomes "and", and spaces become underscores. For example "Mr. Game & Watch" becomes "mr_game_and_watch". When in doubt, simply refer to the top level directories, which are already named appropriately. Additionally, Pokemon Trainer is split into 3 separate characters.
 
-1. Pokemon Trainer is split into 3 separate characters
-2. These echo fighters will be counted as separate characters:
+#### Echo Fighters
+
+These echo fighters will be counted as separate characters:
+
   - Lucina and Marth
   - Chrom and Roy
   - Dark Pit and Pit
   - Ken and Ryu
   - Dark Samus and Samus
-3. These echo fighters will use the same document, since their differences are extremely subtle:
+
+ These echo fighters will use the same document, since their differences are extremely subtle:
+ 
   - Richter matchups use `simon.md`.
-  - Daisy matchups use `daisy.md`.
+  - Daisy matchups use `peach.md`.
