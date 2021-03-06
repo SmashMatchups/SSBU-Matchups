@@ -22,21 +22,29 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+#       - uses: actions/checkout@v2
          
       - name: Check the website generator repo
         uses: actions/checkout@master
         with:
           repository: SmashMatchups/SiteGenerator
 
+      - name: build site
+        run: |
+          npm install
+          npm run build
+        
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: ls -l
         
-#       - name: Cloud Storage Uploader
-#         uses: google-github-actions/upload-cloud-storage@v0.2.0
-#         with: 
-#           credentials: {{secrets.keyJson}}
-#           path: output
-#           destination: gs://www.smashmatchups.com
+      - name: upload to smashmatchups.com
+        uses: google-github-actions/upload-cloud-storage@v0.2.0
+        with: 
+          credentials: ${{secrets.keyJson}}
+          path: output
+          destination: gs://www.smashmatchups.com
