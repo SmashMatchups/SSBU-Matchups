@@ -55,7 +55,7 @@ jobs:
           export_default_credentials: true
          
       - name: upload to smashmatchups.com
-        run: gsutil -o "GSUtil:max_upload_compression_buffer_size=8G" -m rsync -J output gs://www.smashmatchups.com
+        run: gsutil -o "GSUtil:max_upload_compression_buffer_size=8G" -c -m rsync -J output gs://www.smashmatchups.com
         
       - name: Change content type to HTML
-        run: gsutil -m setmeta -h "Content-Type:text/html" gs://your-bucket/*
+        run: gsutil -m setmeta -h "Content-Type:text/html" gs://www.smashmatchups.com/*
