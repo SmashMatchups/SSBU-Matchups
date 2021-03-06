@@ -34,7 +34,6 @@ jobs:
           repository: SmashMatchups/SiteGenerator
 
       - name: build site
-        working-directory: ./SiteGenerator
         run: |
           npm install
           npm run build
