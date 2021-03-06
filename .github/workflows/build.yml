@@ -41,7 +41,7 @@ jobs:
           path: matchups
 
       - name: move matchup files next to generator
-        run: mv -r matchups/matchups/* matchups
+        run: mv matchups/matchups/* matchups
 
       - name: build site
         run: |
