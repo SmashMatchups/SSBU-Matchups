@@ -32,6 +32,16 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: SmashMatchups/SiteGenerator
+          path: matchups  
+
+      - name: Check the matchup database repo
+        uses: actions/checkout@master
+        with:
+          repository: SmashMatchups/SSBU-Matchups
+          path: matchups
+
+      - name: move matchup files next to generator
+        run: mv -r matchups/matchups/* matchups
 
       - name: build site
         run: |
@@ -47,4 +57,4 @@ jobs:
         with: 
           credentials: ${{secrets.keyJson}}
           path: output
-          destination: gs://www.smashmatchups.com
+          destination: www.smashmatchups.com
