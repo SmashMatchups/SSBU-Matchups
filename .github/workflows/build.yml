@@ -32,7 +32,6 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: SmashMatchups/SiteGenerator
-          path: matchups  
 
       - name: Check the matchup database repo
         uses: actions/checkout@master
