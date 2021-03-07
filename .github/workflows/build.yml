@@ -50,6 +50,7 @@ jobs:
       - name: gzip html files 
         run: |
           gzip output/*
+          cd output
           rename -- .gz '' *.gz
     
       - name: Set up gcloud Cloud SDK environment
