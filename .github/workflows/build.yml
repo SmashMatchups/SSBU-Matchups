@@ -68,3 +68,4 @@ jobs:
         run: |
           gsutil -m setmeta -h "Content-Type:text/css" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/style.css
           gsutil -m setmeta -h "Content-Type:image/png" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/img/**
+          gsutil -m setmeta -h "Content-Type:image/png" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/logo.png
