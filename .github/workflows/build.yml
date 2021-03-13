@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Publish Changes
 
 # Controls when the action will run. 
 on:
@@ -22,13 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Setup Node.js environment
+      - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
-
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2
          
-      - name: Check the website generator repo
+      - name: Check out the website generator
         uses: actions/checkout@master
         with:
           repository: SmashMatchups/SiteGenerator
@@ -49,8 +46,8 @@ jobs:
 
       - name: gzip html files 
         run: |
-          gzip output/*
           cd output
+          find . -regex '\./[^.]*$' -maxdepth 1 -type f | gzip
           rename -- .gz '' *.gz
     
       - name: Set up gcloud Cloud SDK environment
