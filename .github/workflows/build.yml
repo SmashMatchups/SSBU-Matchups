@@ -64,5 +64,7 @@ jobs:
       - name: upload to smashmatchups.com
         run: gsutil -o "GSUtil:max_upload_compression_buffer_size=8G" -m -h Content-Type:text/html -h Content-Encoding:gzip rsync -c -J output gs://www.smashmatchups.com
         
-      - name: Change style.css content type
-        run: gsutil -m setmeta -h "Content-Type:text/css" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/style.css
+      - name: Update content types
+        run: |
+          gsutil -m setmeta -h "Content-Type:text/css" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/style.css
+          gsutil -m setmeta -h "Content-Type:image/png" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/img/**
