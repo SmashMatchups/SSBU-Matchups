@@ -47,7 +47,7 @@ jobs:
       - name: gzip html files 
         run: |
           cd output
-          find . -regex '\./[^.]*$' -maxdepth 1 -type f | gzip
+          find . -regex '\./[^.]*$' -maxdepth 1 -type f  -exec gzip {} \;
           rename -- .gz '' *.gz
     
       - name: Set up gcloud Cloud SDK environment
@@ -61,4 +61,4 @@ jobs:
         run: gsutil -o "GSUtil:max_upload_compression_buffer_size=8G" -m -h Content-Type:text/html -h Content-Encoding:gzip rsync -c -J output gs://www.smashmatchups.com
         
       - name: Change content type to HTML
-        run: gsutil -m setmeta -h "Content-Type:text/html" gs://www.smashmatchups.com/*
+        run: gsutil -m setmeta -h "Content-Type:text/html" -h "Content-Encoding:gzip" gs://www.smashmatchups.com/*
