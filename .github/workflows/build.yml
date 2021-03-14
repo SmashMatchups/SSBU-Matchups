@@ -53,9 +53,9 @@ jobs:
           
       - name: upload html files
         run: |
-          gsutil -Z -h Content-Type:text/html cp output/* gs://www.smashmatchups.com
+          gsutil -h Content-Type:text/html cp -Z output/* gs://www.smashmatchups.com
         
       - name: upload assets
         run: |
-          gsutil -Z -h Content-Type:text/css assets/style.css gs://www.smashmatchups.com/style.css
-          gsutil -h Content-Type:image/png assets/img/** gs://www.smashmatchups.com/img/
+          gsutil -h Content-Type:text/css cp -Z assets/style.css gs://www.smashmatchups.com/style.css
+          gsutil -h Content-Type:image/png cp -Z assets/img/** gs://www.smashmatchups.com/img/
