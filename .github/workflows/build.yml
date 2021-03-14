@@ -47,7 +47,7 @@ jobs:
       - name: gzip html files 
         run: |
           cd output
-          find . -regex '\./[^.]*$' -maxdepth 1 -type f  -exec gzip {} \;
+          find . -regex '\./[^.]*$' -maxdepth 0 -type f  -exec gzip {} \;
           find -type f -name '*.gz' | while read f; do mv "$f" "${f%.gz}"; done
           gzip index.html
           mv index.html.gz index.html
@@ -62,7 +62,7 @@ jobs:
           export_default_credentials: true
          
       - name: upload to smashmatchups.com
-        run: gsutil -o "GSUtil:max_upload_compression_buffer_size=8G" -m -h Content-Type:text/html -h Content-Encoding:gzip rsync -c -J output gs://www.smashmatchups.com
+        run: gsutil -o "GSUtil:max_upload_compression_buffer_size=8G" -m -h Content-Type:text/html -h Content-Encoding:gzip rsync -c output gs://www.smashmatchups.com
         
       - name: Update content types
         run: |
