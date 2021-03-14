@@ -58,4 +58,4 @@ jobs:
       - name: upload assets
         run: |
           gsutil -h Content-Type:text/css cp -Z assets/style.css gs://www.smashmatchups.com/style.css
-          gsutil -h Content-Type:image/png cp -Z assets/img/** gs://www.smashmatchups.com/img/
+          gsutil -h Content-Type:image/png cp assets/img/** gs://www.smashmatchups.com/img/
