@@ -53,7 +53,7 @@ jobs:
           
       - name: upload html files
         run: |
-          gsutil -h Content-Type:text/html cp -Z output/* gs://www.smashmatchups.com
+          gsutil -m -o "GSUtil:max_upload_compression_buffer_size=8G" -h Content-Type:text/html cp -Z output/* gs://www.smashmatchups.com
         
       - name: upload assets
         run: |
