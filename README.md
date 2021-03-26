@@ -12,7 +12,7 @@ As of this writing, there are as many as 81 characters (depending on how you cou
 
 ### Matchup Style Guide
 
-In order to keep pages somewhat consistent, pages must adhere to this common style:
+In order to keep pages somewhat consistent, pages should adhere to this common style:
 
 1. Start with a **Character vs. Character** heading
 2. Split suggestions into categories such as
@@ -20,26 +20,12 @@ In order to keep pages somewhat consistent, pages must adhere to this common sty
   - Disadvantage
   - Edgeguarding
   - Dealing with Projectiles
-  - Stage Meta
-  These are not requirements, just suggestions. Not every matchup needs to have all the same sections. But splitting it up into sections makes it more quickly scannable, especially inbetween online battles.
+  - Stage Picks
+ 
+These are not requirements, just suggestions. Not every matchup needs to have all the same sections. But splitting it up into sections makes it more quickly scannable, especially inbetween online battles.
 
 ### Character Names
 
 Matchup file names have to be specific (otherwise SmashMatchups.com won't find them). We can't have one matchup have "R.O.B.md" as the file, and another "rob.md".
 
 To fix this, names are normalized into lowercase, periods are removed, "&" becomes "and", and spaces become underscores. For example "Mr. Game & Watch" becomes "mr_game_and_watch". When in doubt, simply refer to the top level directories, which are already named appropriately. Additionally, Pokemon Trainer is split into 3 separate characters.
-
-#### Echo Fighters
-
-These echo fighters will be counted as separate characters:
-
-  - Lucina and Marth
-  - Chrom and Roy
-  - Dark Pit and Pit
-  - Ken and Ryu
-  - Dark Samus and Samus
-
- These echo fighters will use the same document, since their differences are extremely subtle:
- 
-  - Richter matchups use `simon.md`.
-  - Daisy matchups use `peach.md`.
