@@ -28,7 +28,7 @@
 - Falcon’s has good aerials that can kill effectively if he sweet spots
 - Back Air is probably his most likely option to use against off stage opponents
 - Alternatively he can also use weak knee (sour spot Fair) to keep you away if you drift too low
-- Falcon has a linear recovery and can be gimped by “rock crocking”
+- Falcon has a linear recovery and can be gimped by **“rock crocking”**
 - This involves letting Falcon grab you with his Falcon Dive, teching against the stage, holding forward (towards Blast Zone) and performing an immediate aerial
 - Be cautious if Falcon recovers with a midair Raptor Boost as this will spike you straight down
 - The same goes for his Up Tilt as this also spikes hard
