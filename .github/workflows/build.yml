@@ -59,5 +59,6 @@ jobs:
         run: |
           gsutil -h Content-Type:text/css cp -Z assets/style.css gs://www.smashmatchups.com/style.css
           gsutil -h Content-Type:image/png cp assets/img/** gs://www.smashmatchups.com/img/
-          gsutil setmeta -h Content-Encoding gs://www.smashmatchups.com/img/**
+          gsutil setmeta -h Content-Encoding gs://www.smashmatchups.com/img/icon/*
+          gsutil setmeta -h Content-Encoding gs://www.smashmatchups.com/img/*
           gsutil setmeta -h Content-Encoding -h Content-Type:image/x-icon gs://www.smashmatchups.com/favicon.ico
