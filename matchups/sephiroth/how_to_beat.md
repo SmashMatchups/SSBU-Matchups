@@ -2,23 +2,25 @@
 
 ## Neutral
 
-- If your opponent wants to throw out Omnislash a lot, simply hold shield and punish after, the move has a tonne of end lag
+- Sephiroth wants you running into him as much as possible
+- Avoid landing on him as his Up Smash covers a great area above him
+- If he throws out Omnislash a lot, simply hold shield and punish after, the move has a ton of end lag
 - Sephiroth will usually have a Shadow Flare on deck
 - Be warned that he can turn and launch this quickly
 - He’ll use the shadow orbs to distract and pressure you into shielding
 - Ignore them for a short time, they won’t hurt you until 5-6 seconds after touching you
+  - Be careful when shielding the shadow orbs - that combined with a smash can break your shields
+  - You can go to ledge and use ledge getups to block them for free potentially
 
 ## Advantage
 
-- Sephiroth wants you running into him as much as possible
-- Avoid landing on him as his Up Smash covers a great area above him
 - He has a tipper effect like Lucina, so he wants you at around arms length due to his much bigger sword
 - Sephiroths can launch Onmislash if they’re feeling confident or as a surprise move, and landing this will cause big damage and can kill surprisingly early
 - Be aware that shielding too much will mean Sephiroth can land heavy blows on you with his sword, all of which do good shield damage
 
 ## Disadvantage
 
-- Projectile characters will have a much easier time against the Final Fantasy villain
+- Projectile characters will have a much easier time against him
 - His moves cover a large area, but are very laggy and leave him open
 - Work out your opponents timing for how and when they swing to know when to exploit them
 - If you’re confident you know their timing, Air Dodge through their attack and punish before they can react
